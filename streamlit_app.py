@@ -5,6 +5,10 @@ from snowflake.snowpark.functions import col
 
 
 # Write directly to the app
+import requests
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
+
 st.title("Customize your Smoothie :cup_with_straw")
 
 
